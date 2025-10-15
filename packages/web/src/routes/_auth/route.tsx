@@ -2,8 +2,7 @@ import { Home2Solid, MenuHamburger1Solid, PlusSolid } from "@lineiconshq/free-ic
 import { Lineicons } from "@lineiconshq/react-lineicons";
 import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { Button } from "@/common/ui/Button";
-import { NavBar } from "@/common/ui/navbar/NavBar";
-import NavBarItem from "@/common/ui/navbar/NavBarItem";
+import { NavBar, NavBarItem } from "@/common/ui/NavBar";
 
 export const Route = createFileRoute("/_auth")({
 	component: AuthLayout,
@@ -12,7 +11,9 @@ export const Route = createFileRoute("/_auth")({
 function AuthLayout() {
 	return (
 		<div className="flex min-h-dvh flex-col">
-			<Outlet />
+			<main className="flex-1 [view-transition-name:main-content]">
+				<Outlet />
+			</main>
 			<NavBar
 				items={[
 					<NavBarItem key="home" icon={Home2Solid} to="/" />,

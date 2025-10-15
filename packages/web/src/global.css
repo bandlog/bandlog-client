@@ -60,7 +60,7 @@ body {
   --primary: #725cff;
   --primary-foreground: #ffffff;
   --secondary: oklch(0.97 0 0);
-  --secondary-foreground: #ffffff;
+  --secondary-foreground: oklch(0.256 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
@@ -201,14 +201,14 @@ html:active-view-transition-type(slide-right) {
   }
   to {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
 }
 
 @keyframes fade-in-scale {
   from {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.975);
   }
   to {
     opacity: 1;

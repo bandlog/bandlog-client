@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/common/ui/Header";
 
 export const Route = createFileRoute("/_auth/")({
 	component: Index,
@@ -6,8 +7,9 @@ export const Route = createFileRoute("/_auth/")({
 
 function Index() {
 	return (
-		<main className="[view-transition-name:main-content]">
-			<h1 className="font-bold text-2xl">Bandlog</h1>
-		</main>
+		<>
+			<Header />
+			<div></div>
+		</>
 	);
 }
