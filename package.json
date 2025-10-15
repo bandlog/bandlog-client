@@ -1,0 +1,25 @@
+{
+  "name": "bandlog-client",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Bandlog monorepo (webview & shared packages)",
+  "packageManager": "pnpm@9",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "clean": "pnpm -r clean || true"
+  },
+  "engines": {
+    "node": ">=18.18",
+    "pnpm": ">=9"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "2.1.0"
+  }
+}
